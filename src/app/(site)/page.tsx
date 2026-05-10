@@ -27,7 +27,6 @@ const Wrapper = styled.div`
   display: flex;
   height: 100dvh;
 
-  /* ★ SP版: 縦並び（カラム）に変更し、全体の高さをコンテンツに合わせる */
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
@@ -44,12 +43,9 @@ const LeftContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  /* ★ SP版: 幅を100%にし、固定（sticky）を解除。 */
-  /* height: 100dvh; はそのまま活かし、スマホでも最初にHeroが画面いっぱいに表示されるようにします */
   @media (max-width: 768px) {
     width: 100%;
     position: relative;
-    /* HeroセクションのZ-indexを必要に応じて調整し、スクロール時に自然に上に流れるようにします */
   }
 `;
 
@@ -65,7 +61,6 @@ const RightContainer = styled.div`
     display: none;
   }
 
-  /* ★ SP版: 幅を100%にし、内部スクロールとスナップを解除。ページ全体の自然なスクロールに任せる */
   @media (max-width: 768px) {
     width: 100%;
     height: auto;

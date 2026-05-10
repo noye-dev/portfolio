@@ -81,7 +81,7 @@ const FluidShapeCenter = styled.div`
   transform: translate(-50%, -50%);
   width: 500px;
   height: 500px;
-  background-color: #f3f4f6;
+  background-color: #4ade80;
   z-index: 0;
   pointer-events: none;
   animation: ${morph} 8s ease-in-out infinite;
